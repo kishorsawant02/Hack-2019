@@ -1,0 +1,32 @@
+[
+  {
+    "userAwardOptId": "21",
+    "userId": "1",
+    "name": "John Miller",
+    "awardId": "6",
+    "startDate": "01-05-2019",
+    "CC": "Digital",
+    "status": "Success",
+    "awardName": "Star performer of the month"
+  },
+  {
+    "userAwardOptId": "22",
+    "userId": "2",
+    "awardId": "6",
+    "startDate": "16-05-2019",
+    "CC": "Digital",
+    "name":"Avengers",
+    "status": "In Progress",
+    "awardName": "Group Award"
+  },
+  {
+    "userAwardOptId": "23",
+    "userId": "3",
+    "awardId": "7",
+    "name":"Virat Sharma",
+    "startDate": "05-05-2019",
+    "CC": "Digital",
+    "status": "In Progress",
+    "awardName": "Star performer of the month"
+  }
+]

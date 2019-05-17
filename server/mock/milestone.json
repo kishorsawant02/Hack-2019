@@ -1,0 +1,22 @@
+[
+  {
+    "milestoneName": "Went Extra Mile",
+    "milestoneId": "1",
+    "duration": "10"
+  },
+  {
+    "milestoneName": "Innovativeness",
+    "milestoneId": "2",
+    "duration": "20"
+  },
+  {
+    "milestoneName": "Collaboration",
+    "milestoneId": "3",
+    "duration": "30"
+  },
+  {
+    "milestoneName": "New Domain/Technical Sharing",
+    "milestoneId": "4",
+    "duration": "30"
+  }
+]

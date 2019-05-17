@@ -1,0 +1,72 @@
+[
+  {
+    "userId": "1",
+    "name": "Sourav",
+    "type": "I",
+    "role": "developer",
+    "nominatedBy": "own",
+    "date": "16-05-2019",
+    "justification": "perspiciatis unde omnis",
+    "CC": "Digital Delivery"
+  },
+  {
+    "userId": "2",
+    "name": "Kishor",
+    "type": "I",
+    "role": "developer",
+    "nominatedBy": "own",
+    "date": "15-05-2019",
+    "justification": "tem accusantium doloremque",
+    "CC": "Digital Delivery"
+  },
+  {
+    "userId": "3",
+    "name": "Madhu",
+    "type": "I",
+    "role": "tester",
+    "nominatedBy": "own",
+    "date": "16-05-2019",
+    "justification": "voluptatem quia voluptas",
+    "CC": "Digital Delivery"
+  },
+  {
+    "userId": "4",
+    "name": "Vaishali",
+    "type": "I",
+    "role": "developer",
+    "nominatedBy": "own",
+    "date": "16-05-2019",
+    "justification": "uia dolor sit amet, consectetur",
+    "CC": "Digital Delivery"
+  },
+  {
+    "userId": "5",
+    "name": "Optus SD",
+    "type": "T",
+    "role": "team",
+    "nominatedBy": "Own",
+    "date": "16-05-2019",
+    "justification": "ptatem sequi nesciunt",
+    "CC": "Digital Delivery"
+  },
+  {
+    "userId": "6",
+    "name": "Shankar",
+    "type": "I",
+    "role": "developer",
+    "nominatedBy": "own",
+    "date": "16-05-2019",
+    "justification": "scing elit, sed do eiusm",
+    "CC": "Digital Delivery"
+  },
+  {
+    "userId": "7",
+    "name": "Digital team",
+    "type": "T",
+    "role": "team",
+    "nominatedBy": "Own",
+    "date": "16-05-2019",
+    "justification": "ptatem sequi nesciunt",
+    "CC": "Digital Delivery"
+  }
+]

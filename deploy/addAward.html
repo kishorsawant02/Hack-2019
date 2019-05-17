@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Awards</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--https://getbootstrap.com/docs/4.3/content/tables/-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ractive/1.3.6/ractive.min.js"></script>
+    
+</head>
+<body style="background-image: url(images.jpg);">
+    <div id="target"></div>
+    <script id="template" type="text/ractive">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="logo.png" width="70px" height="57px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="https://amdocsprodmain.service-now.com/one_portal">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/AddMilestone.html">Add Milestones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/graphs.html" tabindex="-1" >Trending</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+    <form style="max-width:1000px;margin:50px auto;">
+        <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                    <div class="card bg-light">
+                        <div class="card-header">
+                        <h2 align="center">ADD AWARD DETAILS</h2>
+                        </div>
+                        <div class="card-body">
+                        <div class="form-group row">
+                            <label for="awardTitle" class="col-sm-4 col-form-label">Award Title</label>
+                            <div class="col-sm-8"><input type="text" class="form-control" id="awardTitle"></div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="awardFrequency" class="col-sm-4 col-form-label">Award Frequency</label>
+                            <div class="col-sm-8">
+                                <select class="form-control" id="awardFrequency">
+                                    <option>Monthly</option>
+                                    <option>Quaterly</option>
+                                    <option>Yearly</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="awardNominationCategory" class="col-sm-4 col-form-label">Category</label>
+                            <div class="col-sm-8">
+                                <select class="form-control" id="awardNominationCategory">
+                                    <option>Individual</option>
+                                    <option>Team</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="audience" class="col-sm-4 col-form-label">Audience</label><div class="col-sm-8"><textarea class="form-control" id="audience"></textarea></div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="milestone" class="col-sm-4 col-form-label">Select Milestone(s)</label>
+                                <div class="col-sm-8">
+                                    <div class="form-check">
+                                        {{#each milesList:i}}
+                                            <input class="form-check-input" type="checkbox" value="" id="milestone{{i}}">
+                                            <label class="form-check-label" for="milestone{{i}}" style="margin-right: 60px;">
+                                                    {{milestoneName}}
+                                            </label>
+                                             <br> 
+                                        {{/each}}
+                                    </div>
+                                </div>
+                        </div><br>
+                        <div class="form-group row" style="    margin-bottom: 2px;">
+                            <div class="col-sm-6 text-right">
+                                <button class="btn btn-success" type="submit" onclick="alert('Hello World!')">SUBMIT</button>
+                            </div>
+                            <div class="col-sm-6">
+                                <button class="btn btn-success" type="cancel"  onclick="alert('Bye World!')">CANCEL</button>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                </div>
+                <div class="col-sm-5">
+                     <div class="card bg-light">
+                        <div class="card-header">
+                            <h2 align="center">Awards</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group row">
+                                <ul class="list-group" style="width:100%;">
+                                    {{#each awards}}
+                                      <li class="list-group-item" style="text-align: center;">
+                                        <label for="employeeName" class="">{{awardName}}</label>
+                                      </li>
+                                    {{/each}}
+                                </ul>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+    </form>
+	 </script>
+    <script type="text/javascript">
+        Ractive({
+            target: '#target',
+            template: '#template',
+            data: {
+                awards: null,
+                milesList:null
+            },
+            oninit() {
+                var self = this;
+                console.log('sdjfka');
+                $.ajax({
+                    url: '/award/byCategory/12',
+                    success: function (result, model) {
+                        self.set('awards', result.data);
+                    },
+                    error: function(response) {
+                        console.log('jdskhgks');
+                    }
+                });
+                 $.ajax({
+                    url: '/milestone/retrieve',
+                    success: function (result, model) {
+                        self.set('milesList', result);
+                    },
+                    error: function(response) {
+                        console.log('jdskhgks');
+                    }
+                });
+            },
+            on: {
+                //clickEvents
+            }
+
+        });
+    </script>
+</body>
+</html>

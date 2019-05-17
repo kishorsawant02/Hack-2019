@@ -1,0 +1,87 @@
+[
+  {
+    "awardId": "1",
+    "awardName": "Star performer of the month",
+    "frequency": "Monthy",
+    "category": "I",
+    "audience": "30",
+    "milestoneId": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "awardId": "2",
+    "awardName": "Spot award",
+    "frequency": "Monthy",
+    "category": "I",
+    "audience": "30",
+    "milestoneId": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "awardId": "3",
+    "awardName": "Star performer of the Quarter",
+    "frequency": "Monthy",
+    "category": "I",
+    "audience": "30",
+    "milestoneId": [
+      "1",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "awardId": "4",
+    "awardName": "Star Group of the month",
+    "frequency": "Monthy",
+    "category": "G",
+    "audience": "30",
+    "milestoneId": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "awardId": "5",
+    "awardName": "Group Award",
+    "frequency": "Monthy",
+    "category": "G",
+    "audience": "30",
+    "milestoneId": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "awardId": "6",
+    "awardName": "Innovarive Performer",
+    "frequency": "Quarter",
+    "category": "G",
+    "audience": "30",
+    "milestoneId": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "awardId": "7",
+    "awardName": "Made a Difference",
+    "frequency": "Quarter",
+    "category": "G",
+    "audience": "30",
+    "milestoneId": [
+      "1",
+      "2",
+      "3"
+    ]
+  }
+]

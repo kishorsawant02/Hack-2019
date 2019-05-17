@@ -1,0 +1,19 @@
+{
+  "name": "hk2019",
+  "version": "1.0.1",
+  "description": "recognition portal",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --inspect server.js"
+  },
+  "author": "kishor sawant",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "mysql": "^2.17.1"
+  }
+}
